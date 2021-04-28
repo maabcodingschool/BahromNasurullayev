@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/28/2021 8:50:01 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-L0OT3IQS"
+  DTS:CreatorName="LAPTOP-L0OT3IQS\MaabB"
+  DTS:DTSID="{09D589EF-267A-457A-BB5F-2B68096BEF57}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.166"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{E81E54EE-E6ED-47EE-AD59-378B080B752C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1F0B58E7-137E-46C3-8235-9FF674F513FA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Monthname">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DEE90291-C0CA-47EE-8EAA-2F944FEC9024}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::MonthnameExp]=&#xA;month(getdate())==1?&quot;january&quot;:&#xA;month(getdate())==2?&quot;February&quot;:&#xA;month(getdate())==3?&quot;March&quot;:&#xA;month(getdate())==4?&quot;april&quot;:&#xA;month(getdate())==5?&quot;may&quot;:&#xA;month(getdate())==6?&quot;June&quot;:&#xA;month(getdate())==7?&quot;July&quot;:&#xA;month(getdate())==8?&quot;August&quot;:&#xA;month(getdate())==9?&quot;September&quot;:&#xA;month(getdate())==10?&quot;october&quot;:&#xA;month(getdate())==11?&quot;November&quot;:&quot;December&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="MonthnameExp">
+      <DTS:VariableValue
+        DTS:DataType="8">april</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Get Short Month Name"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{93F9DC9B-75FD-44D2-AEA4-BB8BF66FD935}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get Short Month Name"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="month(getdate())==1?&quot;january&quot;:&#xA;month(getdate())==2?&quot;February&quot;:&#xA;month(getdate())==3?&quot;March&quot;:&#xA;month(getdate())==4?&quot;april&quot;:&#xA;month(getdate())==5?&quot;may&quot;:&#xA;month(getdate())==6?&quot;June&quot;:&#xA;month(getdate())==7?&quot;July&quot;:&#xA;month(getdate())==8?&quot;August&quot;:&#xA;month(getdate())==9?&quot;September&quot;:&#xA;month(getdate())==10?&quot;october&quot;:&#xA;month(getdate())==11?&quot;November&quot;:&quot;December&quot;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="189.333333333334,42.6666666666667"
+          Id="Package\Get Short Month Name"
+          TopLeft="212.499996833503,73.8947382329904" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
