@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Tech_Broyhers_Video_Tutorial111-130", "Tech_Broyhers_Video_Tutorial111-130\Tech_Broyhers_Video_Tutorial111-130.dtproj", "{A56C48B2-5CD0-476C-B0A9-852677F29A7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56C48B2-5CD0-476C-B0A9-852677F29A7E}.Development|Default.ActiveCfg = Development
+		{A56C48B2-5CD0-476C-B0A9-852677F29A7E}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A143AB9-FDA1-4DAC-876A-815FA8D9C045}
+	EndGlobalSection
+EndGlobal
